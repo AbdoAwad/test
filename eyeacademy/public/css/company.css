@@ -1,0 +1,266 @@
+/*
+SiteName = In Out
+Coder = Omar Awad
+FirstColor = #32a9e8
+SecondColor = #f5c521
+*/
+
+/*Start Company*/
+
+.copmanies, .projects, .staffs{
+    padding-top:100px;
+    margin-bottom: 200px;
+}
+
+.copmanies h2 ,.projects h2, .staffs h2{
+    margin: 20px 0 40px;
+    text-align: center;
+    color: #000;
+}
+
+.copmanies .company, .projects .project,.staffs .staff,.galleries .gallery{
+    border-radius: 10px;
+    box-shadow: 0 0px 0px 0 rgba(6,6,6,0.14), 0 1px 4px 0 rgba(6,6,6,0.12), 0 0px 0px 0px rgba(6,6,6,0.2);
+    height: 250px;
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.copmanies .company{
+    height: 300px;
+}
+
+.copmanies .company .company-top, .projects .project .project-top,.staffs .staff .staff-top {
+    height: 60%;
+    padding: 20px 0;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+
+.copmanies .company .company-top {
+    height: 50%;
+}
+
+.copmanies .company .company-top img {}
+
+.copmanies .company .company-bottom, .projects .project .project-bottom,.staffs .staff .staff-bottom {
+    text-align: right;
+}
+
+.copmanies .company .company-bottom h6, .projects .project .project-bottom h6,.staffs .staff .staff-bottom {
+    margin: 15px;
+}
+
+.copmanies .company .company-bottom ul {
+    padding-right: 0;
+    margin-bottom: 10px;
+}
+
+.copmanies .company .company-bottom ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.copmanies .company .company-bottom ul li a{
+    color: #666;
+}
+
+.copmanies .company .company-bottom ul li a:hover {
+    transform: scale(1.5,1.5) !important;
+    transition: all .4s ease-in-out;
+}
+
+.copmanies .company .company-bottom ul li:first-child a:hover {
+    color: #32a9e8;
+}
+
+.copmanies .company .company-bottom ul li:nth-child(2) a:hover {
+    color: #4ced69;
+}
+
+.copmanies .company .company-bottom ul li:nth-child(3) a:hover {
+    color: #4f6ffd;
+}
+
+.copmanies .company .company-bottom ul li:last-child a:hover {
+    color: #aa0000;
+}
+
+.copmanies .company .company-bottom .btn{
+    text-align: center;
+    width: 94%;
+    margin: 0 10px;
+    border: 1px solid #f5c521;
+}
+
+.copmanies .company .company-bottom .btn i {
+    margin-left:10px;
+    color: #f5c521;
+}
+
+@media (min-width: 1200px) {
+    .copmanies .container, .projects .container, .staffs .container {
+        max-width: 1300px !important;
+    }
+}
+/*End Company*/
+
+/*Start Project*/
+
+/*.projects {    background: url("../image/company-back2.svg") no-repeat left; background-size: 800px;}*/
+
+
+.projects,.staffs {
+    margin-bottom: 200px;
+}
+
+.projects .project,.staffs .staff {
+    height: 350px;
+}
+
+.projects .project .project-top,.staffs .staff .staff-top {
+    padding: 0px;
+}
+
+.projects .project .project-top img:hover {
+    transform: scale(1.5,1.5);
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.projects .project .project-bottom,.staffs .staff .staff-bottom {
+    padding: 15px;
+}
+
+.projects .project .project-bottom h6,.staffs .staff .staff-bottom h6 {
+    margin: 0px;
+    margin-bottom: 10px;
+    color: #32a9e8;
+}
+
+.projects .project .project-bottom p, .staffs .staff .staff-bottom p{
+    margin: 0px 0px 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.projects .project .project-bottom a, .staffs .staff .staff-bottom a{
+    text-align: center;
+    width: 100%;
+    border: 1px solid #f5c521;
+}
+
+/*End Project*/
+
+/*Start staff Section*/
+
+.staffs .staff  {
+    height: 300px;
+}
+
+.staffs .staff .staff-top  {
+    height: 40%;
+    overflow: visible;
+    background-color: #666;
+}
+
+.staffs .staff .staff-top img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 60px;
+    box-shadow: 0 0px 0px 0 rgba(6,6,6,0.14), 0 1px 4px 0 rgba(6,6,6,0.12), 0 0px 0px 0px rgba(6,6,6,0.2);
+}
+
+.staffs .staff .staff-bottom {
+    text-align: center;
+    padding-top: 60px;
+}
+
+/*End staff Section*/
+
+/*Start gallery Section*/
+
+.galleries {
+    padding-top: 120px;
+    margin-bottom: 300px;
+}
+
+.galleries .gallery {
+    height: 250px;
+}
+
+.galleries .gallery img {
+    filter: grayscale(20%);
+    transition: 1s;
+}
+
+.galleries .gallery img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.galleries .gallery .btn {
+    width: 93%;
+    margin: 0 10px;
+    color: #fff;
+    background-color: #f5c521;
+}
+
+.website {
+    right: 0%;
+    top: 70%;
+    float: right;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.website a {
+    z-index: 999999;
+    position: absolute;
+    right: 0%;
+    top: 5%;
+}
+
+.website div {
+    position: absolute;
+    border: 5px solid #f5c521;
+    opacity: 1;
+    border-radius: 50%;
+    animation: website 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    z-index: 9999;
+}
+.website div:nth-child(2) {
+    animation-delay: -.5s;
+}
+@keyframes website {
+    0% {
+        top: 30px;
+        left: 40px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    50% {
+        top: 30px;
+        left: 40px;
+        width: 0;
+        height: 0;
+        opacity: 0.5;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 80px;
+        height: 80px;
+        opacity: 0.8;
+    }
+}
+
+/*End gallery Section*/
+
+

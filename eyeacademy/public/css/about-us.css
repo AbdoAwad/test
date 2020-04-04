@@ -1,0 +1,187 @@
+/*
+SiteName = In Out
+Coder = Omar Awad
+FirstColor = #32a9e8
+SecondColor = #f5c521
+*/
+
+/* Start About us */
+
+.about-us, .contact-us{
+  padding: 110px 10px 10px;
+    margin-bottom: 45px;
+}
+
+.about-us .row{
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+    height: 580px;
+    border-radius:20px ;
+}
+
+.about-us-info {
+  padding: 20px;
+    border-radius:0px 20px 20px 0;
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 0px 0px 0px rgba(0,0,0,0.2);
+}
+
+.about-us-info h3 {
+  height:60px;
+  width: 100%;
+  color: #6d6d6d;
+  padding-top: 7px;
+  padding-left: 7px;
+  text-align: center;
+}
+
+.about-us-info ul li {
+  text-align: right;
+  line-height: 37px;
+}
+
+@media screen and (max-width: 560px) {
+    .about-us .row{
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .about-us-info {
+        border-radius:20px;
+    }
+}
+
+/* End About us */
+
+
+
+/* start contact section */
+
+.contact-us-info{
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 0px 0px 0px rgba(0,0,0,0.2);
+    height:100%;
+    border-radius: 50px 0;
+}
+
+.inner-bg {
+    padding: 40px 0 170px 0;
+}
+
+.top-content .text {
+    color: #fff;
+}
+
+.top-content .text h1 { color: #fff; }
+
+.top-content .description {
+    margin: 20px 0 10px 0;
+}
+
+.top-content .description p { opacity: 0.8; }
+
+.top-content .description a {
+    color: #fff;
+}
+.top-content .description a:hover,
+.top-content .description a:focus { border-bottom: 1px dotted #fff; }
+
+.top-content .top-big-link {
+    margin-top: 35px;
+}
+
+.form-box {
+    margin-right: 50px;
+    padding-top: 60px;
+}
+
+.form-top {
+    overflow: hidden;
+    padding: 0 25px 15px 25px;
+    background: #fff;
+    -moz-border-radius: 40px 4px 0 0; -webkit-border-radius: 40px 4px 0 0; border-radius: 40px 4px 0 0;
+    text-align: left;
+}
+
+.form-top-right {
+    width: 50%;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.form-top-right h3 { margin-top: 0; color: #f5c521; }
+.form-top-right p { opacity: 0.8; color: #3ca9cd; }
+
+.form-top-left {
+    float: left;
+    width: 45%;
+    padding-top: 5px;
+    font-size: 66px;
+    line-height: 100px;
+    text-align: left;
+    opacity: 1;
+}
+
+
+.form-bottom {
+    padding: 25px 25px 30px 25px;
+    background: #fff;
+    -moz-border-radius: 0 0 40px 4px; -webkit-border-radius: 0 0 40px 4px; border-radius: 0 0 40px 4px;
+    text-align: center;
+}
+
+.form-bottom label {
+    color: #3ca9cd;
+    display: block;;
+}
+
+.pure-form .pure-group input, .pure-form .pure-group input:last-child, .pure-form .pure-group textarea:last-child{
+    width: 80%;
+    border-radius: 10px;
+    margin:10px auto;
+    padding-right: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0px 0px 0 rgba(6,6,6,0.14), 0 1px 4px 0 rgba(6,6,6,0.12), 0 0px 0px 0px rgba(6,6,6,0.2);
+}
+
+.pure-form .pure-group input, .pure-form .pure-group input:last-child {
+    height: 40px;
+    padding-right:10px;
+}
+
+.form-bottom textarea {
+    height: 100px;
+}
+
+.form-bottom .btn
+{
+    width: 50%;
+    text-align: center;
+    background-color:#3ca9cd;
+    color:white;
+    margin: 20px auto;
+}
+
+.form-bottom form .input-error {
+    border-color: #19b9e7;
+}
+
+.result .form-bottom .btn {
+    background-color: #32a9e8;
+}
+
+@media screen and (max-width: 560px) {
+    section {
+        padding: 20px 0px 20px;
+    }
+
+    .contact {
+        padding: 10px;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .form-top-left img {
+        width: 100%
+    }
+}
+
+
+/* end contact us */

@@ -1,0 +1,56 @@
+        if($request->ajax()) {
+            $response ='
+                <div class="table-responsive">
+                    <div class="table-responsive">
+                        <table class="table table-hover js-basic-example dataTable table_custom border-style spacing5">
+                            <thead>
+                            <tr>
+                                <th>Enter Time</th>
+                                <th>Name</th>
+                                <th>Timer</th>
+                                <th>Actions</th>
+            ';
+            if(auth()->user()->finish_visit == 1)
+                $response = $response .'<th>Finish</th>';
+            $response = $response .'
+                        </tr>
+                        </thead>
+                        <tbody>
+            ';
+            foreach($tracks as $track)
+            {
+                $response = $response .'
+                    <tr>
+                    <td>'.$track->visit->created_at.'</td>
+                    <td>'.$track->visit->patient->name.' </td>
+                    <td><p id="demo"></p></td>
+                    <td>
+
+                    ';
+                    foreach($stations as $stationx){
+                        if($stationx->id != $id)
+                        $response = $response .'
+                            <a style="background-color: '.$stationx->background.'; padding:3px; width: 50%; color: #fff; border-radius: 5px; " href="">'.$stationx->name.'</a>';
+                    }
+                $response = $response .'
+                    </td>';
+                    if(auth()->user()->finish_visit == 1){
+                        $response = $response .'
+                            <td>
+                                <form id="form-finish-visit" method="POST" style="display:inline;" action=""'.route('finishvisit',$track->id).'""  enctype="multipart/form-data">
+
+                                '.method_field('PATCH').'
+                                <button type="submit" class="btn btn-primary" data-submit="visit"><i class="fe fe-log-out"></i></button>
+                                </form>
+                            </td>
+                            ';
+                    }
+                 $response = $response .'
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>';
+            }
+            return $response;
+        };
